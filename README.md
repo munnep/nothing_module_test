@@ -2,7 +2,7 @@
 
 This repo has a vagrant box to easily use for testing the example described in this repository [https://github.com/kikitux/nothing-module/tree/master/example](https://github.com/kikitux/nothing-module/tree/master/example)
 
-You can then test the nothin-module repo with kitchen-terraform as described in the earlier mentioned repository
+You can then test the nothing-module repo with kitchen-terraform as described in the earlier mentioned repository
 
 # Prerequisites
 
@@ -43,7 +43,19 @@ bundle exec kitchen test
 
 You should see a succesfull test
 ```
+...
+...
+...
+  Command: `terraform state list`
+     ✔  stdout is expected to eq "module.nothing.null_resource.nothing\n"
+     ✔  stderr is expected to eq ""
+     ✔  exit_status is expected to eq 0
 
+Test Summary: 3 successful, 0 failures, 0 skipped
+       Finished verifying <default-terraform> (0m0.24s).
+...
+...
+...       
 ```
 
 - exit out of the vagrant machine
