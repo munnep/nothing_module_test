@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
     env: { "VERSION" => "0.12.31" }
   
   config.vm.provision "shell", path: "vagrant_scripts/install_bundle.sh"
+  config.vm.provision "shell", path: "vagrant_scripts/git_clone_repo.sh", privileged: false
   
   config.vm.provider "virtualbox" do |v|
     v.memory = 1024*2
