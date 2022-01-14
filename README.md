@@ -4,6 +4,13 @@ This repo has a vagrant box to easily use for testing the example described in t
 
 You can then test the nothing-module repo with kitchen-terraform as described in the earlier mentioned repository
 
+Vagrant virtual machine:
+- ubuntu virtual machine starts
+- terraform installed
+- ruby and bundle get installed
+- repository ```github.com/kikitux/nothing-module``` gets cloned
+
+
 # Prerequisites
 
 Vagrant [See documentation](https://www.vagrantup.com/docs/installation)  
